@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -140,6 +140,7 @@
 		D50B0EC2BB2245F32E757C50 /* CandleChartDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E698FF540029B70AC97AD7 /* CandleChartDataEntry.swift */; };
 		D819331DA581C7E0AC5F8CEF /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976E5F9D60E30CD94CE6156 /* Animator.swift */; };
 		DBC9DB402CC9BB84B76968C4 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137428B41C143D5115726C4 /* Description.swift */; };
+		DD6B19B52D76928700B6A62E /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = DD6B19B42D76928700B6A62E /* Numerics */; };
 		DDE704689FDF2C0E0338488B /* CandleChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4785FEACAE4367F36FB8868 /* CandleChartData.swift */; };
 		DE0F434FE8C24C52B023370F /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF475B9593B9898853814340 /* Transformer.swift */; };
 		E3B28EA1E21279DF3889BCE8 /* RadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA6B21CBDF77A15848994F /* RadarChartDataSet.swift */; };
@@ -347,6 +348,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6B19B52D76928700B6A62E /* Numerics in Frameworks */,
 				228D56232554F27A00BEE75E /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,6 +757,7 @@
 			name = Charts;
 			packageProductDependencies = (
 				228D56222554F27A00BEE75E /* Algorithms */,
+				DD6B19B42D76928700B6A62E /* Numerics */,
 			);
 			productName = Charts;
 			productReference = 65AD9E95D9ED4DC0BD73A743 /* Charts.framework */;
@@ -810,6 +813,7 @@
 			packageReferences = (
 				228D56212554F27A00BEE75E /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				22BBDA0625CC4C2F00435670 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				DD6B19B32D76928700B6A62E /* XCRemoteSwiftPackageReference "swift-numerics" */,
 			);
 			productRefGroup = AB2D554102718F209377399E /* Products */;
 			projectDirPath = "";
@@ -1326,6 +1330,14 @@
 				minimumVersion = 1.8.2;
 			};
 		};
+		DD6B19B32D76928700B6A62E /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1338,6 +1350,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22BBDA0625CC4C2F00435670 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
+		};
+		DD6B19B42D76928700B6A62E /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD6B19B32D76928700B6A62E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
